@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0F72AA32BC2EC7E0080E26D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72AA22BC2EC7E0080E26D /* AppDelegate.swift */; };
+		A0F72AA52BC2EC7E0080E26D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72AA42BC2EC7E0080E26D /* SceneDelegate.swift */; };
+		A0F72AF02BC2EC9F0080E26D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F72AB72BC2EC9E0080E26D /* Assets.xcassets */; };
+		A0F72AF22BC2EC9F0080E26D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72ABC2BC2EC9F0080E26D /* AppCoordinator.swift */; };
+		A0F72AF32BC2EC9F0080E26D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72ABD2BC2EC9F0080E26D /* Coordinator.swift */; };
+		A0F72AF42BC2EC9F0080E26D /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72ABF2BC2EC9F0080E26D /* CellProtocol.swift */; };
+		A0F72AF52BC2EC9F0080E26D /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72AC02BC2EC9F0080E26D /* UITableView+Extension.swift */; };
+		A0F72AF62BC2EC9F0080E26D /* NibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72AC22BC2EC9F0080E26D /* NibLoadingView.swift */; };
+		A0F72AF82BC2EC9F0080E26D /* PlayerDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72AC82BC2EC9F0080E26D /* PlayerDetailsViewModel.swift */; };
+		A0F72AF92BC2EC9F0080E26D /* PlayerInfoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F72ACD2BC2EC9F0080E26D /* PlayerInfoTableCell.xib */; };
+		A0F72AFA2BC2EC9F0080E26D /* PlayerInfoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72ACE2BC2EC9F0080E26D /* PlayerInfoTableCell.swift */; };
+		A0F72AFB2BC2EC9F0080E26D /* LastMatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72AD02BC2EC9F0080E26D /* LastMatchTableViewCell.swift */; };
+		A0F72AFC2BC2EC9F0080E26D /* LastMatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F72AD12BC2EC9F0080E26D /* LastMatchTableViewCell.xib */; };
+		A0F72AFD2BC2EC9F0080E26D /* TotalRewardsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F72AD32BC2EC9F0080E26D /* TotalRewardsTableCell.xib */; };
+		A0F72AFE2BC2EC9F0080E26D /* TotalRewardsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72AD42BC2EC9F0080E26D /* TotalRewardsTableCell.swift */; };
+		A0F72AFF2BC2EC9F0080E26D /* CardInfoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F72AD62BC2EC9F0080E26D /* CardInfoTableCell.xib */; };
+		A0F72B002BC2EC9F0080E26D /* CardInfoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72AD72BC2EC9F0080E26D /* CardInfoTableCell.swift */; };
+		A0F72B012BC2EC9F0080E26D /* NextMatchTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F72AD92BC2EC9F0080E26D /* NextMatchTableCell.xib */; };
+		A0F72B022BC2EC9F0080E26D /* NextMatchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72ADA2BC2EC9F0080E26D /* NextMatchTableCell.swift */; };
+		A0F72B032BC2EC9F0080E26D /* CardPlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72ADC2BC2EC9F0080E26D /* CardPlayerTableViewCell.swift */; };
+		A0F72B042BC2EC9F0080E26D /* CardPlayerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F72ADD2BC2EC9F0080E26D /* CardPlayerTableViewCell.xib */; };
+		A0F72B052BC2EC9F0080E26D /* PlayerDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F72ADF2BC2EC9F0080E26D /* PlayerDetailsViewController.xib */; };
+		A0F72B062BC2EC9F0080E26D /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72AE02BC2EC9F0080E26D /* PlayerDetailsViewController.swift */; };
+		A0F72B072BC2EC9F0080E26D /* PitchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72AE32BC2EC9F0080E26D /* PitchViewModel.swift */; };
+		A0F72B082BC2EC9F0080E26D /* PlayerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72AE52BC2EC9F0080E26D /* PlayerCoordinator.swift */; };
+		A0F72B092BC2EC9F0080E26D /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72AE92BC2EC9F0080E26D /* PlayerView.swift */; };
+		A0F72B0A2BC2EC9F0080E26D /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F72AEA2BC2EC9F0080E26D /* PlayerView.xib */; };
+		A0F72B0B2BC2EC9F0080E26D /* PitchViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72AED2BC2EC9F0080E26D /* PitchViewViewController.swift */; };
+		A0F72B0C2BC2EC9F0080E26D /* PitchViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F72AEE2BC2EC9F0080E26D /* PitchViewViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A0F72A9F2BC2EC7E0080E26D /* FanzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FanzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0F72AA22BC2EC7E0080E26D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0F72AA42BC2EC7E0080E26D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A0F72AB02BC2EC7F0080E26D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F72AB72BC2EC9E0080E26D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0F72ABC2BC2EC9F0080E26D /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A0F72ABD2BC2EC9F0080E26D /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A0F72ABF2BC2EC9F0080E26D /* CellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		A0F72AC02BC2EC9F0080E26D /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		A0F72AC22BC2EC9F0080E26D /* NibLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadingView.swift; sourceTree = "<group>"; };
+		A0F72AC82BC2EC9F0080E26D /* PlayerDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewModel.swift; sourceTree = "<group>"; };
+		A0F72ACD2BC2EC9F0080E26D /* PlayerInfoTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerInfoTableCell.xib; sourceTree = "<group>"; };
+		A0F72ACE2BC2EC9F0080E26D /* PlayerInfoTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerInfoTableCell.swift; sourceTree = "<group>"; };
+		A0F72AD02BC2EC9F0080E26D /* LastMatchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastMatchTableViewCell.swift; sourceTree = "<group>"; };
+		A0F72AD12BC2EC9F0080E26D /* LastMatchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LastMatchTableViewCell.xib; sourceTree = "<group>"; };
+		A0F72AD32BC2EC9F0080E26D /* TotalRewardsTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TotalRewardsTableCell.xib; sourceTree = "<group>"; };
+		A0F72AD42BC2EC9F0080E26D /* TotalRewardsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalRewardsTableCell.swift; sourceTree = "<group>"; };
+		A0F72AD62BC2EC9F0080E26D /* CardInfoTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardInfoTableCell.xib; sourceTree = "<group>"; };
+		A0F72AD72BC2EC9F0080E26D /* CardInfoTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardInfoTableCell.swift; sourceTree = "<group>"; };
+		A0F72AD92BC2EC9F0080E26D /* NextMatchTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextMatchTableCell.xib; sourceTree = "<group>"; };
+		A0F72ADA2BC2EC9F0080E26D /* NextMatchTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextMatchTableCell.swift; sourceTree = "<group>"; };
+		A0F72ADC2BC2EC9F0080E26D /* CardPlayerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPlayerTableViewCell.swift; sourceTree = "<group>"; };
+		A0F72ADD2BC2EC9F0080E26D /* CardPlayerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardPlayerTableViewCell.xib; sourceTree = "<group>"; };
+		A0F72ADF2BC2EC9F0080E26D /* PlayerDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerDetailsViewController.xib; sourceTree = "<group>"; };
+		A0F72AE02BC2EC9F0080E26D /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
+		A0F72AE32BC2EC9F0080E26D /* PitchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchViewModel.swift; sourceTree = "<group>"; };
+		A0F72AE52BC2EC9F0080E26D /* PlayerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCoordinator.swift; sourceTree = "<group>"; };
+		A0F72AE92BC2EC9F0080E26D /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		A0F72AEA2BC2EC9F0080E26D /* PlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerView.xib; sourceTree = "<group>"; };
+		A0F72AED2BC2EC9F0080E26D /* PitchViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchViewViewController.swift; sourceTree = "<group>"; };
+		A0F72AEE2BC2EC9F0080E26D /* PitchViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PitchViewViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0F72A9C2BC2EC7E0080E26D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0F72A962BC2EC7E0080E26D = {
+			isa = PBXGroup;
+			children = (
+				A0F72AA12BC2EC7E0080E26D /* FanzApp */,
+				A0F72AA02BC2EC7E0080E26D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0F72AA02BC2EC7E0080E26D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72A9F2BC2EC7E0080E26D /* FanzApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0F72AA12BC2EC7E0080E26D /* FanzApp */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AB62BC2EC9E0080E26D /* Resources */,
+				A0F72AB82BC2EC9F0080E26D /* Sources */,
+			);
+			path = FanzApp;
+			sourceTree = "<group>";
+		};
+		A0F72AB62BC2EC9E0080E26D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AB72BC2EC9E0080E26D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A0F72AB82BC2EC9F0080E26D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AB02BC2EC7F0080E26D /* Info.plist */,
+				A0F72AA22BC2EC7E0080E26D /* AppDelegate.swift */,
+				A0F72AA42BC2EC7E0080E26D /* SceneDelegate.swift */,
+				A0F72ABA2BC2EC9F0080E26D /* Utilities */,
+				A0F72AC42BC2EC9F0080E26D /* ViewRelated */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A0F72ABA2BC2EC9F0080E26D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72ABB2BC2EC9F0080E26D /* Coordinator */,
+				A0F72ABE2BC2EC9F0080E26D /* Extensions */,
+				A0F72AC12BC2EC9F0080E26D /* ReusableViews */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A0F72ABB2BC2EC9F0080E26D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72ABC2BC2EC9F0080E26D /* AppCoordinator.swift */,
+				A0F72ABD2BC2EC9F0080E26D /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A0F72ABE2BC2EC9F0080E26D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72ABF2BC2EC9F0080E26D /* CellProtocol.swift */,
+				A0F72AC02BC2EC9F0080E26D /* UITableView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A0F72AC12BC2EC9F0080E26D /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AC22BC2EC9F0080E26D /* NibLoadingView.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		A0F72AC42BC2EC9F0080E26D /* ViewRelated */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AC52BC2EC9F0080E26D /* Modules */,
+			);
+			path = ViewRelated;
+			sourceTree = "<group>";
+		};
+		A0F72AC52BC2EC9F0080E26D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AC62BC2EC9F0080E26D /* MoCardDetails */,
+				A0F72AE12BC2EC9F0080E26D /* PitchView */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A0F72AC62BC2EC9F0080E26D /* MoCardDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AC72BC2EC9F0080E26D /* ViewModel */,
+				A0F72AC92BC2EC9F0080E26D /* View */,
+			);
+			path = MoCardDetails;
+			sourceTree = "<group>";
+		};
+		A0F72AC72BC2EC9F0080E26D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AC82BC2EC9F0080E26D /* PlayerDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A0F72AC92BC2EC9F0080E26D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72ACA2BC2EC9F0080E26D /* Cells */,
+				A0F72ADE2BC2EC9F0080E26D /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0F72ACA2BC2EC9F0080E26D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72ACB2BC2EC9F0080E26D /* TableViewCells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A0F72ACB2BC2EC9F0080E26D /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72ACC2BC2EC9F0080E26D /* PlayerInfo */,
+				A0F72ACF2BC2EC9F0080E26D /* LastMatch */,
+				A0F72AD22BC2EC9F0080E26D /* TotalRewards */,
+				A0F72AD52BC2EC9F0080E26D /* CardInfo */,
+				A0F72AD82BC2EC9F0080E26D /* NextMatch */,
+				A0F72ADB2BC2EC9F0080E26D /* CardPlayer */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		A0F72ACC2BC2EC9F0080E26D /* PlayerInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72ACD2BC2EC9F0080E26D /* PlayerInfoTableCell.xib */,
+				A0F72ACE2BC2EC9F0080E26D /* PlayerInfoTableCell.swift */,
+			);
+			path = PlayerInfo;
+			sourceTree = "<group>";
+		};
+		A0F72ACF2BC2EC9F0080E26D /* LastMatch */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AD02BC2EC9F0080E26D /* LastMatchTableViewCell.swift */,
+				A0F72AD12BC2EC9F0080E26D /* LastMatchTableViewCell.xib */,
+			);
+			path = LastMatch;
+			sourceTree = "<group>";
+		};
+		A0F72AD22BC2EC9F0080E26D /* TotalRewards */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AD32BC2EC9F0080E26D /* TotalRewardsTableCell.xib */,
+				A0F72AD42BC2EC9F0080E26D /* TotalRewardsTableCell.swift */,
+			);
+			path = TotalRewards;
+			sourceTree = "<group>";
+		};
+		A0F72AD52BC2EC9F0080E26D /* CardInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AD62BC2EC9F0080E26D /* CardInfoTableCell.xib */,
+				A0F72AD72BC2EC9F0080E26D /* CardInfoTableCell.swift */,
+			);
+			path = CardInfo;
+			sourceTree = "<group>";
+		};
+		A0F72AD82BC2EC9F0080E26D /* NextMatch */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AD92BC2EC9F0080E26D /* NextMatchTableCell.xib */,
+				A0F72ADA2BC2EC9F0080E26D /* NextMatchTableCell.swift */,
+			);
+			path = NextMatch;
+			sourceTree = "<group>";
+		};
+		A0F72ADB2BC2EC9F0080E26D /* CardPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72ADC2BC2EC9F0080E26D /* CardPlayerTableViewCell.swift */,
+				A0F72ADD2BC2EC9F0080E26D /* CardPlayerTableViewCell.xib */,
+			);
+			path = CardPlayer;
+			sourceTree = "<group>";
+		};
+		A0F72ADE2BC2EC9F0080E26D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72ADF2BC2EC9F0080E26D /* PlayerDetailsViewController.xib */,
+				A0F72AE02BC2EC9F0080E26D /* PlayerDetailsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A0F72AE12BC2EC9F0080E26D /* PitchView */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AE22BC2EC9F0080E26D /* ViewModel */,
+				A0F72AE42BC2EC9F0080E26D /* Coordinator */,
+				A0F72AE62BC2EC9F0080E26D /* View */,
+			);
+			path = PitchView;
+			sourceTree = "<group>";
+		};
+		A0F72AE22BC2EC9F0080E26D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AE32BC2EC9F0080E26D /* PitchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A0F72AE42BC2EC9F0080E26D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AE52BC2EC9F0080E26D /* PlayerCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A0F72AE62BC2EC9F0080E26D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AE72BC2EC9F0080E26D /* Subviews */,
+				A0F72AEB2BC2EC9F0080E26D /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0F72AE72BC2EC9F0080E26D /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AE82BC2EC9F0080E26D /* PlayerView */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		A0F72AE82BC2EC9F0080E26D /* PlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AE92BC2EC9F0080E26D /* PlayerView.swift */,
+				A0F72AEA2BC2EC9F0080E26D /* PlayerView.xib */,
+			);
+			path = PlayerView;
+			sourceTree = "<group>";
+		};
+		A0F72AEB2BC2EC9F0080E26D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AEC2BC2EC9F0080E26D /* PitchView */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A0F72AEC2BC2EC9F0080E26D /* PitchView */ = {
+			isa = PBXGroup;
+			children = (
+				A0F72AED2BC2EC9F0080E26D /* PitchViewViewController.swift */,
+				A0F72AEE2BC2EC9F0080E26D /* PitchViewViewController.xib */,
+			);
+			path = PitchView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0F72A9E2BC2EC7E0080E26D /* FanzApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0F72AB32BC2EC7F0080E26D /* Build configuration list for PBXNativeTarget "FanzApp" */;
+			buildPhases = (
+				A0F72A9B2BC2EC7E0080E26D /* Sources */,
+				A0F72A9C2BC2EC7E0080E26D /* Frameworks */,
+				A0F72A9D2BC2EC7E0080E26D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FanzApp;
+			productName = FanzApp;
+			productReference = A0F72A9F2BC2EC7E0080E26D /* FanzApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0F72A972BC2EC7E0080E26D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					A0F72A9E2BC2EC7E0080E26D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = A0F72A9A2BC2EC7E0080E26D /* Build configuration list for PBXProject "FanzApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0F72A962BC2EC7E0080E26D;
+			productRefGroup = A0F72AA02BC2EC7E0080E26D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0F72A9E2BC2EC7E0080E26D /* FanzApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0F72A9D2BC2EC7E0080E26D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0F72B0A2BC2EC9F0080E26D /* PlayerView.xib in Resources */,
+				A0F72AFC2BC2EC9F0080E26D /* LastMatchTableViewCell.xib in Resources */,
+				A0F72AF92BC2EC9F0080E26D /* PlayerInfoTableCell.xib in Resources */,
+				A0F72AF02BC2EC9F0080E26D /* Assets.xcassets in Resources */,
+				A0F72AFF2BC2EC9F0080E26D /* CardInfoTableCell.xib in Resources */,
+				A0F72B052BC2EC9F0080E26D /* PlayerDetailsViewController.xib in Resources */,
+				A0F72AFD2BC2EC9F0080E26D /* TotalRewardsTableCell.xib in Resources */,
+				A0F72B012BC2EC9F0080E26D /* NextMatchTableCell.xib in Resources */,
+				A0F72B0C2BC2EC9F0080E26D /* PitchViewViewController.xib in Resources */,
+				A0F72B042BC2EC9F0080E26D /* CardPlayerTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0F72A9B2BC2EC7E0080E26D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0F72AF22BC2EC9F0080E26D /* AppCoordinator.swift in Sources */,
+				A0F72B022BC2EC9F0080E26D /* NextMatchTableCell.swift in Sources */,
+				A0F72B032BC2EC9F0080E26D /* CardPlayerTableViewCell.swift in Sources */,
+				A0F72B092BC2EC9F0080E26D /* PlayerView.swift in Sources */,
+				A0F72AFA2BC2EC9F0080E26D /* PlayerInfoTableCell.swift in Sources */,
+				A0F72AF62BC2EC9F0080E26D /* NibLoadingView.swift in Sources */,
+				A0F72B072BC2EC9F0080E26D /* PitchViewModel.swift in Sources */,
+				A0F72AF82BC2EC9F0080E26D /* PlayerDetailsViewModel.swift in Sources */,
+				A0F72B062BC2EC9F0080E26D /* PlayerDetailsViewController.swift in Sources */,
+				A0F72AF42BC2EC9F0080E26D /* CellProtocol.swift in Sources */,
+				A0F72AF52BC2EC9F0080E26D /* UITableView+Extension.swift in Sources */,
+				A0F72B082BC2EC9F0080E26D /* PlayerCoordinator.swift in Sources */,
+				A0F72AF32BC2EC9F0080E26D /* Coordinator.swift in Sources */,
+				A0F72AA32BC2EC7E0080E26D /* AppDelegate.swift in Sources */,
+				A0F72AFE2BC2EC9F0080E26D /* TotalRewardsTableCell.swift in Sources */,
+				A0F72AA52BC2EC7E0080E26D /* SceneDelegate.swift in Sources */,
+				A0F72B0B2BC2EC9F0080E26D /* PitchViewViewController.swift in Sources */,
+				A0F72B002BC2EC9F0080E26D /* CardInfoTableCell.swift in Sources */,
+				A0F72AFB2BC2EC9F0080E26D /* LastMatchTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A0F72AB12BC2EC7F0080E26D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0F72AB22BC2EC7F0080E26D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0F72AB42BC2EC7F0080E26D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FanzApp/Sources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ammar.FanzApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A0F72AB52BC2EC7F0080E26D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FanzApp/Sources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ammar.FanzApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0F72A9A2BC2EC7E0080E26D /* Build configuration list for PBXProject "FanzApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F72AB12BC2EC7F0080E26D /* Debug */,
+				A0F72AB22BC2EC7F0080E26D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0F72AB32BC2EC7F0080E26D /* Build configuration list for PBXNativeTarget "FanzApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F72AB42BC2EC7F0080E26D /* Debug */,
+				A0F72AB52BC2EC7F0080E26D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0F72A972BC2EC7E0080E26D /* Project object */;
+}
